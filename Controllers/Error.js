@@ -40,8 +40,8 @@ const ReportError = (ErrorRaised, Response) => {
         });
     }else{
         Response.status(500).json({
-            Status: 'Server Error',
-            Message: 'Internal Server Error'
+            Status: 'Server Error' + Response,
+            Message: 'Internal Server Error' 
         });
     }
 };
